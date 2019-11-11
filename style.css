@@ -663,7 +663,7 @@ input[type="submit"]:hover{
     }
 
     .timeline .date{
-        margin: 0 0 0 auto;
+        margin-left: 0;
     }
 
     .timeline .data-date::before{
@@ -716,6 +716,14 @@ input[type="submit"]:hover{
         .portfolio-description{
             margin: 0;
             order: 2;
+        }
+
+        .timeline ul{
+            margin: 0 0 0 auto;
+        }
+        
+        .timeline .date{
+            margin-left: 0;
         }
 
         .timeline p{
