@@ -449,7 +449,7 @@ li{
 /* start timeline */
 .timeline ul{
     border-left: 4px solid #21ebb0;
-    border-radius: 0.8rem;
+    border-radius: 0;
     background: rgba(0,0,0,0.05);
     margin: 0 auto;
     position: relative;
@@ -659,6 +659,10 @@ input[type="submit"]:hover{
     }
 
     .timeline ul{
+        margin: 0 0 0 auto;
+    }
+
+    .timeline .date{
         margin: 0 0 0 auto;
     }
 
