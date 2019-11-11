@@ -470,6 +470,7 @@ li{
 
 .timeline .date{
     border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
@@ -721,7 +722,7 @@ input[type="submit"]:hover{
         .timeline ul{
             margin: 0 0 0 auto;
         }
-        
+
         .timeline .date{
             margin-left: 0;
         }
