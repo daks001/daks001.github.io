@@ -608,8 +608,8 @@ input[type="submit"]:hover{
 /* media queries */
 @media screen and (max-width: 768px){
     body{
-        background: url("b.jpg") no-repeat center fixed;
-        /* background: #000; */
+        /*background: url("b.jpg") no-repeat center fixed;*/
+        background: #000;
         background-size: cover;
     }
 
