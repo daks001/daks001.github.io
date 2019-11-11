@@ -229,7 +229,7 @@ li{
 }
 
 .landing-text h1{
-    font-size: 14rem;
+    font-size: 12rem;
     font-family: 'Times', sans-serif;
     /* background: linear-gradient(to top, #ffe838, #fd57bf); */
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%); */
@@ -678,6 +678,10 @@ input[type="submit"]:hover{
         
         .landing-text{
             font-size: 8rem;
+        }
+
+        .landing-text h1{
+            font-size: 10rem;
         }
 
         .landing-text h6{
