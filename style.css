@@ -459,6 +459,10 @@ li{
     width: 70%;
 }
 
+.timeline .date.data-date{
+    font-size: 1rem;
+}
+
 .timeline h1{
     font-size: 2rem;
     text-transform: uppercase;
@@ -470,7 +474,6 @@ li{
 
 .timeline .date{
     border-bottom: 1px solid rgba(255,255,255,.1);
-    font-size: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
@@ -495,7 +498,7 @@ li{
     left: -24rem;
     text-align: right;
     min-width: 12rem;
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .timeline .date p{
@@ -668,11 +671,17 @@ input[type="submit"]:hover{
     }
 
     .timeline .data-date::before{
-        left: -20rem;
+        /* left: -20rem; */
+        left: auto;
+    }
+
+    .timeline .date::before{
+            font-size: 1.2rem;
     }
 
     .timeline .data-date::after{
-        left: -5.9rem;
+        left: auto; 
+        /* -5.9rem */
     }
 
     @media screen and (max-width: 600px){
@@ -731,8 +740,18 @@ input[type="submit"]:hover{
             font-size: 1.6rem;
         }
 
+        .timeline .data-date::before{
+            /* left: -20rem; */
+            left: auto;
+        }
+    
         .timeline .date::before{
-            font-size: 1.4rem;
+                font-size: 1.2rem;
+        }
+    
+        .timeline .data-date::after{
+            left: auto; 
+            /* -5.9rem */
         }
 
         form{
