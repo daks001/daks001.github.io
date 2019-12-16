@@ -341,7 +341,7 @@
                     <h1>Contact</h1>
                     <h6>Want to collaborate?</h6>
                 </div>
-                <form method="post" action="form.php" data-aos="fade-up" data-aos-delay="100">
+                <form method="POST" action="https://formspree.io/dakshika001@gmail.com" data-aos="fade-up" data-aos-delay="100">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                     <label for="email">Email:</label>
@@ -358,7 +358,10 @@
                     </select>
                     <label for="subject">Your message:</label>
                     <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-                    <input type="submit" value="Submit">
+                    <div class="status">
+
+                    </div>
+                    <button type="submit" value="Submit" class="submit"> Submit </button>
                 </form>
             </div>
     </section>
@@ -373,6 +376,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
