@@ -550,6 +550,7 @@ textarea{
     outline-color: #fd57bf;
 }
 
+/* .button{ */
 input[type="submit"]{
     width: initial;
     background-color: #21ebb0;
