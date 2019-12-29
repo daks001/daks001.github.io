@@ -151,7 +151,6 @@ li{
     font-family: 'Times', sans-serif;
     font-size: 3rem;
     padding: 1rem;
-    text-transform: uppercase;
 }
 
 .nav-link:hover,
@@ -170,7 +169,7 @@ li{
 }
 
 .menu-toggler{
-    position: absolute;
+    position: fixed;
     top: 5rem;
     right: 5rem;
     width: 5rem;
@@ -327,7 +326,30 @@ li{
 /* end about */
 
 /* start services */
+
+/* #services{
+    margin-top: 50px;
+    background-color: #fff;
+    height: 1000px;
+}
+
+#services .container .section-heading h1{
+    color: #000;
+}
+
+#services .container .section-heading h6{
+    color: #000;
+} */
+
+/* .middle{ */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+/* }  */
+
 .my-skills{
+    /* cursor: pointer; */
     margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33.3rem, 1fr));
@@ -335,12 +357,47 @@ li{
     text-align: center;
 }
 
+/* .skill:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.skill:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* backface-visibility: hidden; */
+    /* position: absolute; */
+    /* transition: transform .6s linear; */
+
+
+/* .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    color: #000;
+    position: relative;
+    bottom: 50%;
+} */ 
+
+/* .back-content{
+    width: 100%;
+} */
+
 .skill{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    /* border: 2px solid #fff; */
+    /* background-color: white; */
+    /* color: #000; */
 }
 
 .skill h1{
@@ -360,10 +417,12 @@ li{
     height: 10rem;
     /* border: 3px solid #ffe838; */
     /* background-color: #fd57bf; */
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     background-color: transparent;
     margin-bottom: 2rem;
+    margin-left: 0;
     display: flex;
+    padding: 2rem;
     transform: rotate(45deg);
 }
 
@@ -376,12 +435,11 @@ li{
 }
 
 .icon-container:hover{
-    border: 5px solid #000;
     background: #fff;
     cursor: pointer;
 }
 
-.icon-container i:hover{
+.icon-container:hover i{
     color: #000;
 }
 /* end services */
@@ -459,9 +517,7 @@ li{
     width: 70%;
 }
 
-.timeline .date.data-date{
-    font-size: 1rem;
-}
+
 
 .timeline h1{
     font-size: 2rem;
@@ -498,8 +554,9 @@ li{
     left: -24rem;
     text-align: right;
     min-width: 12rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
+
 
 .timeline .date p{
     font-size: 2rem;
@@ -513,6 +570,7 @@ li{
     opacity: 0.7;
     font-style: italic;
 }
+
 
 .timeline .date::after{
     content: '';
@@ -531,27 +589,35 @@ li{
     /* background-color: #221e3f; */
 }
 
-form{
+#form{
     width: 70%;
     margin: 0 auto;
 }
 
-form label{
+#form label{
     font-size: 1.5rem;
 }
 
-input,
-select,
-textarea{
+#form .label-head{
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+#form select{
+    height: 3rem;
+}
+
+#form input, select, textarea{
     width: 100%;
     padding: 1rem;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: none;
-    outline-color: #fd57bf;
+    outline-color: #21ebb0;
 }
 
 /* .button{ */
-input[type="submit"]{
+#form input[type="submit"]{
     width: initial;
     background-color: #21ebb0;
     color: #000;
@@ -561,9 +627,10 @@ input[type="submit"]{
     transition: background-color 650ms;
 }
 
-input[type="submit"]:hover{
+#form input[type="submit"]:hover{
     color: #000;
     background-color: #F1502F;
+    text-transform: uppercase;
 }
 /* end contact */
 
@@ -578,17 +645,31 @@ input[type="submit"]:hover{
 }
 
 .up{
-    position: absolute;
+    position: fixed;
+    /* margin-bottom: 10px; */
+    bottom: 15px;
     width: 5rem;
     height: 5rem;
     background-color: #eee;
-    top: -2.5rem;
+    /* top: -2.5rem; */
     right: 5rem;
     border-radius: 100%;
     display: flex;
-    animation: pulse 2s infinite;
+    /* animation: pulse 2s infinite; */
     cursor: pointer;
 }
+
+.up:hover{
+    background-color: #21ebb0;
+    transition:  650ms;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+/* .up:hover i{
+    color: #fff;
+    transition: color 400ms;
+}  */
 
 .up i{
     color: #000;
@@ -618,8 +699,14 @@ input[type="submit"]:hover{
         background-size: cover;
     }
 
+    .menu-toggler{
+        right: 7rem;
+        position: fixed;
+    }
+
     .landing-text h1{
-        font-size: 15rem;
+        /* font-size: 10rem; */
+        width: 100%;
     }
 
     .landing-text h6{
@@ -638,8 +725,16 @@ input[type="submit"]:hover{
         font-size: 4.5rem;
     }
 
+    .about{
+        width: 100%;
+    }
+
     .about-heading h1{
         font-size: 8rem;
+    }
+
+    .section{
+        width: 100%;
     }
 
     .section-heading h1{
@@ -677,7 +772,7 @@ input[type="submit"]:hover{
     }
 
     .timeline .date::before{
-            font-size: 1.2rem;
+            font-size: 1.8rem;
     }
 
     .timeline .data-date::after{
@@ -685,10 +780,15 @@ input[type="submit"]:hover{
         /* -5.9rem */
     }
 
-    @media screen and (max-width: 600px){
+    .up{
+        right: 7rem;
+    }
+}
+
+    @media screen and (max-width: 438px){
         .menu-toggler{
             top: 2rem;
-            right: 2rem;
+            right: 7rem;
         }
         
         .landing-text{
@@ -737,8 +837,12 @@ input[type="submit"]:hover{
             margin-left: 0;
         }
 
-        .timeline p{
-            font-size: 1.6rem;
+        .timeline .date p{
+            font-size: 1.5rem;
+        }
+
+        .timeline h1{
+            font-size:  1.5rem;
         }
 
         .timeline .data-date::before{
@@ -747,20 +851,25 @@ input[type="submit"]:hover{
         }
     
         .timeline .date::before{
-                font-size: 1.2rem;
+            font-size: 1.4rem;
+            left: -20rem;
+        }
+
+        .timeline .date::after{
+            left: -6rem;
         }
     
         .timeline .data-date::after{
-            left: auto; 
+            padding-left: 2rem;
             /* -5.9rem */
         }
 
-        form{
+        #form{
             width: 100%;
         }
 
         .up{
-            right: 2rem;
+            right: 7rem;
         }
     }
-}
+
