@@ -1,0 +1,14 @@
+{
+ "skills" : [
+  {
+   "name" : "Java",
+   "icon" : "fab fa-java",
+   "description" : "I coded in Java for five years in school. I have written quite a number of programs in this language and am familiar with topics like recursion, data structures, like linked lists, stacks and queues, and string formatting, to name a few."
+  },
+  {
+   "name" : "Python",
+   "icon" : "fab fa-python",
+   "description" : "Since the beginning of the semester here at my University, I have been coding in Python. I'm taking a class: Introduction to Python', where I'm learning the same OOP concepts, just employing a  different syntax."
+  }
+ ]
+}

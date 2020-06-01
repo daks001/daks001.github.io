@@ -72,3 +72,19 @@ $(document).ready(function()
         once: true
     });
 });
+
+
+/*
+function getData() {
+    let xhttp = XMLHttpRequest();
+
+    xhttp.onreadystatechange = () => {
+        if(xhttp.readyState === 4 && xhttp.status === 200) {
+            let json = JSON.parse(xhttp.response);
+            document.getElementById("skill").innerHTML = `
+            <div class="icon-container"><i class=${json["java"].icon}></i></div>
+            `
+        }
+    }
+}
+*/
