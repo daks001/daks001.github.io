@@ -2,13 +2,39 @@
  "skills" : [
   {
    "name" : "Java",
-   "icon" : "fab fa-java",
-   "description" : "I coded in Java for five years in school. I have written quite a number of programs in this language and am familiar with topics like recursion, data structures, like linked lists, stacks and queues, and string formatting, to name a few."
+   "icon" : "../images/portfolio/icons/java.svg",
+   "description" : "I coded in Java for five years in school. I have written quite a number of programs in this language and am familiar with topics like recursion, data structures, like linked lists, stacks and queues, and string formatting, to name a few.",
+   "delay" : 100
   },
   {
    "name" : "Python",
    "icon" : "fab fa-python",
-   "description" : "Since the beginning of the semester here at my University, I have been coding in Python. I'm taking a class: Introduction to Python', where I'm learning the same OOP concepts, just employing a  different syntax."
+   "description" : "Since the beginning of the semester here at my University, I have been coding in Python. I'm taking a class: Introduction to Python', where I'm learning the same OOP concepts, just employing a  different syntax.",
+   "delay" : 200
+  },
+  {
+   "name" : "HTML, CSS and JavaScript",
+   "icon" : "fab fa-laptop-code",
+   "description" : "I am taking online courses for web development and am working on personal projects like this website, where I'm putting my code out in the real world. I am also involved in a project team with the Aggie Coding Club, which is focused on maintaining the club's official website.",
+   "delay" : 300
+  },
+  {
+   "name" : "Data Analysis",
+   "icon" : "fas fa-file-csv",
+   "description" : "I'm working on a research project which invloves data analysis using python. I am learning how to use Python libraries like pandas and getting familiar with file formats like JSON and CSV.",
+   "delay" : 400
+  },
+  {
+   "name" : "Robotics",
+   "icon" : "fas fa-robot",
+   "description" : "I made many robots in high school, starting off with a hydraulic arm and went on to make many race cars, both wired and wireless. I also made war robots, intended for robot war competitions. Here at A&M, I am involved with the Women in Engineering VEX programming team.",
+   "delay" : 500
+  },
+  {
+   "name" : "Writing and Blogging",
+   "icon" : "fas fa-feather-alt",
+   "description" : "I relish writing and publishing articles on Wordpress. I have written poems and reflections on a variety of themes. I excelled in many literary competitions in school and won accolades for the same.",
+   "delay" : 600
   }
  ]
 }
