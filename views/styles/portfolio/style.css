@@ -323,6 +323,10 @@ li{
 .fa-youtube-square:hover{
     color: #c4302b;
 }
+
+.fa-file-pdf:hover {
+    color: rgb(104, 247, 104);
+}
 /* end about */
 
 /* start services */
