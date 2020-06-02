@@ -405,7 +405,7 @@ li{
 }
 
 .skill h1{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 2rem;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
@@ -453,7 +453,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .portfolio-item:last-child{
@@ -492,18 +492,26 @@ li{
 .portfolio-description .cta{
     display: inline-block;
     margin-top: 2.5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 1.7rem;
+    /* text-transform: uppercase; */
     /* color: #3883ff; */
-    color: #fff;
-    font-style: oblique;
-    text-decoration: underline;
+    /* color: #fff; */
+    padding: 2%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    /* font-style: oblique; */
+    /* text-decoration: underline; */
 }
 
 .portfolio-description .cta:hover{
     /* color: #2f67cd; */
+    /* background: #21ebb0;  */
+    /* color: #000; */
+    color: black;
+    /* border-radius: 5%; */
     background: #21ebb0; 
-    color: #000;
+    border: 2px solid #21ebb0; 
     transition: color 650ms;
 }
 /* end portfolio */
@@ -511,14 +519,18 @@ li{
 /* start timeline */
 .timeline ul{
     border-left: 4px solid #21ebb0;
-    border-radius: 0;
-    background: rgba(0,0,0,0.05);
-    margin: 0 auto;
-    position: relative;
-    padding: 5rem;
+    /* border-radius: 0; */
+    /* background: rgba(0,0,0,0.05); */
+    /* margin: 0 auto; */
+    margin-left: 20%;
+    /* padding-left: 5%; */
+    padding: 0;
+    /* position: relative; */
+    /* padding: 5rem; */
     list-style: none;
-    text-align: left;
-    width: 70%;
+    /* text-align: left; */
+    /* width: 70%; */
+    /* float: right; */
 }
 
 
@@ -534,9 +546,10 @@ li{
 
 .timeline .date{
     border-bottom: 1px solid rgba(255,255,255,.1);
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     padding-bottom: 1rem;
     position: relative;
+    padding-left: 2%;
 }
 
 .timeline .date.last-of-type{
@@ -555,7 +568,7 @@ li{
 
 .timeline .date::before{
     content: attr(data-date);
-    left: -24rem;
+    left: -27%;
     text-align: right;
     min-width: 12rem;
     font-size: 2rem;
@@ -580,7 +593,7 @@ li{
     content: '';
     box-shadow: 0 0 0 4px #fff;
     border-radius: 100%;
-    left: -8rem;
+    left: -3.2%;
     height: 1.5rem;
     width: 1.5rem;
     /* background-color: #313534; */
