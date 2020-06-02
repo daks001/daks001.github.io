@@ -519,14 +519,18 @@ li{
 /* start timeline */
 .timeline ul{
     border-left: 4px solid #21ebb0;
-    border-radius: 0;
-    background: rgba(0,0,0,0.05);
-    margin: 0 auto;
-    position: relative;
-    padding: 5rem;
+    /* border-radius: 0; */
+    /* background: rgba(0,0,0,0.05); */
+    /* margin: 0 auto; */
+    margin-left: 20%;
+    /* padding-left: 5%; */
+    padding: 0;
+    /* position: relative; */
+    /* padding: 5rem; */
     list-style: none;
-    text-align: left;
-    width: 70%;
+    /* text-align: left; */
+    /* width: 70%; */
+    /* float: right; */
 }
 
 
@@ -542,9 +546,10 @@ li{
 
 .timeline .date{
     border-bottom: 1px solid rgba(255,255,255,.1);
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     padding-bottom: 1rem;
     position: relative;
+    padding-left: 2%;
 }
 
 .timeline .date.last-of-type{
@@ -563,7 +568,7 @@ li{
 
 .timeline .date::before{
     content: attr(data-date);
-    left: -24rem;
+    left: -27%;
     text-align: right;
     min-width: 12rem;
     font-size: 2rem;
@@ -588,7 +593,7 @@ li{
     content: '';
     box-shadow: 0 0 0 4px #fff;
     border-radius: 100%;
-    left: -8rem;
+    left: -3.2%;
     height: 1.5rem;
     width: 1.5rem;
     /* background-color: #313534; */
