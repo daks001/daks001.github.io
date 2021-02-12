@@ -900,3 +900,22 @@ li{
         }
     }
 
+#theme-toggle {
+    padding: 2rem;
+    position: fixed;
+    font-size: 5rem;
+    /* border: #5858FA 1px solid; */
+    /* border-radius: 100%; */
+    /* padding: 10px; */
+    border: none;
+    background-color: transparent;
+    color: #5858FA;
+    display: flex;
+}
+
+#theme-toggle:hover {
+    cursor: pointer;
+    /* background-color: #E3CEF6; */
+    font-size: 5.5rem;
+    /* transition: 650ms; */
+} 

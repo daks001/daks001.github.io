@@ -88,3 +88,37 @@ function getData() {
     }
 }
 */
+
+
+// // this one is jut to wait for the page to load
+// document.addEventListener('DOMContentLoaded', () => {
+
+//     const themeStylesheet = document.getElementById('theme');
+//     const themeToggle = document.getElementById('theme-toggle');
+//     themeToggle.addEventListener('click', () => {
+//         // if it's light -> go dark
+//         if(themeStylesheet.href.includes('style')){
+//             // themeStylesheet.href = 'dark-theme.css';
+//             document.body.style.background = "black";
+//             themeToggle.innerText = 'Switch to light mode';
+//         } else {
+//             // if it's dark -> go light
+//             themeStylesheet.href = 'style.css';
+//             themeToggle.innerText = 'Switch to dark mode';
+
+//         }
+//     })
+// })
+
+var theme = document.getElementById('theme-toggle');
+
+theme.addEventListener("click", () => {
+    if (document.body.style.backgroundColor == "white")
+    {
+        document.body.style.backgroundColor = "black";
+    }
+    else 
+    {
+        document.body.style.backgroundColor = "white";
+    }
+})
