@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = "white"
+
 $(document).ready(function()
 {
     $('.menu-toggler').on('click', function()
@@ -110,6 +112,7 @@ function getData() {
 //     })
 // })
 
+//dark mode
 var theme = document.getElementById('theme-toggle');
 
 theme.addEventListener("click", () => {
@@ -121,4 +124,55 @@ theme.addEventListener("click", () => {
     {
         document.body.style.backgroundColor = "white";
     }
-})
+});
+
+//carousel
+var slides = document.querySelectorAll(".slide");
+var btns = document.querySelectorAll(".btn");
+let curr_slide = 1;
+
+let manual_navigation = (manual) => {
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+}
+
+btns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+        manual_navigation(i);
+        curr_slide = i;
+    });
+});
+
+let repeat = (active_class) => {
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    let repeater = () => {
+        setTimeout(() => {
+            [...active].forEach((active_slide) => {
+                active_slide.classList.remove('active');
+            });
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+
+            if(slides.length == 1) {
+                i = 0;
+            }
+            if(i >= slides.length) {
+                return;
+            }
+            repeater();
+        }, 10000);       
+    }
+    repeater();
+}
+repeat();
