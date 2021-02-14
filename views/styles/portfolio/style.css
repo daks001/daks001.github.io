@@ -872,7 +872,7 @@ carousel-body {
     justify-content: center;
     text-align: center;
     font-size: 3rem;
-    text-shadow: 0.1em -0.4em 0.3em #E3CEF6;
+    /* text-shadow: 0.1em -0.4em 0.3em #E3CEF6; */
 }
 
 /* start animation */
