@@ -1,0 +1,2 @@
+#E3CEF6 (light purple)
+#5858FA (dark purple)
