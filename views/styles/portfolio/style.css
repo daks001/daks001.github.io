@@ -477,7 +477,7 @@ li{
 
 .portfolio-description{
     /* flex: 0.1; */
-    min-width: -webkit-fill-available;
+    width: -webkit-fill-available;
 }
 
 .portfolio-description h1{
