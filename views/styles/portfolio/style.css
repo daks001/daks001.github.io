@@ -156,7 +156,7 @@ li{
 .nav-link:hover,
 .nav-link:focus{
     /* background: linear-gradient(to top, #ffe838, #fd57bf); */
-    background: linear-gradient(to top, #0798d7, #c9f6ff);
+    background: linear-gradient(to top, #21ebb0, #c9f6ff);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%); */
     background-clip: text;
     -webkit-background-clip: text;
@@ -455,7 +455,8 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
+    margin: 8rem 15%;
 }
 
 #extra{
@@ -474,9 +475,10 @@ li{
     /* height: 50rem; */
 }
 
-/* .portfolio-description{
-    flex: 0.1;
-} */
+.portfolio-description{
+    /* flex: 0.1; */
+    min-width: -webkit-fill-available;
+}
 
 .portfolio-description h1{
     font-size: 2rem;
@@ -498,7 +500,8 @@ li{
 }
 
 .portfolio-description .cta{
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
     margin-top: 2.5rem;
     font-size: 1.7rem;
     /* text-transform: uppercase; */
