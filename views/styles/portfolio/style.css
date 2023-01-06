@@ -319,7 +319,11 @@ li{
 }
 
 .fa-linkedin:hover{
-    color: #0e76a8;
+    color: #0a66c2;
+}
+
+.fa-code:hover{
+    color: #003E54;
 }
 
 .fa-youtube-square:hover{
@@ -544,7 +548,14 @@ li{
     /* float: right; */
 }
 
+.checkout {
+    text-transform: capitalize;
+    opacity: none;
+}
 
+.checkout a {
+    color: #21ebb0;
+}
 
 .timeline h1{
     font-size: 2rem;
